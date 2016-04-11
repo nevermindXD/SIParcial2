@@ -1,0 +1,128 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\graphicspath{/}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Automatas Celulares}
+\author{By adsoft}
+\maketitle
+
+\pagenumbering{roman}
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+
+\section{introduccion}
+ Los automatas celulares son ...
+
+ \subsection{aplicaciones}
+   Sus aplicaciones en la ingenieria y las ciencias son :
+  \begin{enumerate}
+
+   \item{aplicacion 1 ....}
+   \item{aplicacion 2 ....}
+   \item{aplicacion n }
+
+
+  \end{enumerate}
+
+ \subsection{links de interes}
+   Informacion adicional se puede encontrar en las urls :
+   \url{https://es.wikipedia.org/wiki/Automata_celular}
+
+\section{Caso de estudio}
+   Para esta caso de estudio se aplicara....
+
+ \subsection{dataset}
+  Se usaran los datos de la matriz ...
+
+ \begin{tabular}{rc}
+  x & f(x)  \\
+  \hline
+  -2 & 4 \\
+  -1 & 1 \\
+  0 & 0 \\
+  1 & 1 \\
+  2 & 2 \\
+ \end{tabular}
+
+
+  
+
+\section{Experimento}
+  Para validad se creo el siguiente programa en C++
+
+  \begin{verbatim}
+    #include <iostream>
+    ...
+    void simulate_automatacell newthon(double x)
+    {
+      ....
+    }
+
+    int main()
+    {
+      .....
+      simulate_automatacell(0.1);
+      ....
+
+      return (0);
+    }
+
+  \end{verbatim}
+
+ 
+
+ \subsection{Pruebas}
+
+  se ejecuto el programa con 
+
+  \begin{verbatim}
+   g++ proyecto.cpp -o test
+   ./test > datos.dat 
+
+  \end{verbatim}
+
+  y se genero e siguiente archivo de salida
+
+  \begin{verbatim}
+  -4 16 ...
+  -3 9 ...
+  -2 4 ...
+  -1 1 ...
+   0 0 ...
+   1 1 ...
+   2 2 ...
+   3 9 ...
+   4 16  ...
+  \end{verbatim}
+
+ \subsection{Graficacion de los automatas celulares}
+   se graficaran datos.dat se obtuvo la siguiente grafica.
+   \begin{verbatim}
+     gnuplot
+     gnuplot> plot "datos.dat"
+    \end{verbatim}
+
+
+
+\section{repositorio}
+ se creo un repositorio en \url{bitbucket.org} y su subieron de forma publica
+ los archivos del proyecto 
+ \begin{enumerate} 
+  \item proyecto.tex - archivo en latex del proyecto 
+  \item proyecto.pdf - pdf generado con pdflatex
+  \item proyecto.cpp - codigo fuente del programa en C++
+  \item datos.dat    - archivo de datos generado por el programa
+  \item grafica1.png grafica2.png.. grafican.png - graficas generados con gnuplot
+ \end{enumerate}
+
+ 
+\section{Conclusiones}
+ como conclusion de este experimento....
+
+\end{document}
